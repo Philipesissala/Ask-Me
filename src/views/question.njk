@@ -1,0 +1,19 @@
+{%extends 'layout.njk'%}
+{%block content%}
+<div class="container">
+    <div class="card" id="card-form">
+        <div class="card-header">
+            <h3>Fazer pergunta</h3>
+        </div>
+        <div class="card-body">
+            <form action="/question/save" method="POST">
+                <label for="titulo">Titulo</label><hr> <input type="text" id="titulo" name="titulo" placeholder="Titulo" class="form-control">
+                <br>
+                <label for="descricao">Descrição</label>
+                <textarea placeholder="Descrever sua pergunta aqui" id="descricao" name="descricao" class="form-control"></textarea><br>
+                <button class="btn btn-primary">Perguntar</button>
+            </form>
+        </div>
+    </div>
+</div>
+{%endblock%}
