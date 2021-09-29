@@ -1,27 +1,23 @@
 {% extends 'layout.njk' %}
 {% block content %}
-    <div class="container">
-        <hr>
-        <h1>Pagina pergunta</h1>
-        <h4>{{ question.titulo }}</h4>
-        <p>{{ question.descricao }}</p>
-        <hr>
-            <form action="/answer" method="POST">
-                <label for="corpo">Responder</label>
-                <textarea id="corpo" name="corpo" placeholder="Digite sua resposta" class="form-control"></textarea><br>
-                <input type="hidden" name="perguntaId" value="{{question.id}}">
-                <button class="btn btn-primary">Responder</button>
-            </form>
-             <hr>
-             <h3>Respostas</h3>
-             <hr>
-             {%for answer in answers%}
-             <br>
-             <div class="card">
-                 <div class="card-body">
-                    <p>{{answer.corpo}}</p>
-                 </div>
-             </div>
-             {%endfor%}
-        </div>
+     <div class="answer-content">
+      <div class="question">
+        <h1>{{question.titulo}}</h1>
+        <p>
+          {{question.descricao}}
+        </p>
+      </div>
+      <form action="/answer" method="POST">
+        <label for="corpo">Responder</label>
+        <textarea id="corpo" name="corpo" cols="30" rows="7"></textarea>
+        <input type="hidden" name="perguntaId" value="{{question.id}}">
+        <button>Responder</button>
+      </form>
+      <h1>Respotas</h1>
+      {%for answer in answers%}
+      <div class="answer">
+        <p>{{answer.corpo}}</p>
+      </div>
+      {%endfor%}
+    </div>
     {% endblock %}

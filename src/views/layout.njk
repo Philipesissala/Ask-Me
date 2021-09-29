@@ -5,13 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Perguntas</title>
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/style.css">
+       
+        <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
-        <nav class="navbar navbar-light bg-dark">
-           <a href="/" class="home">ASK ME</a> 
-        </nav>
+        <header>
+      <nav>
+        <a href="/" class="logo"
+          >Ask <span class="point"></span> <span>Me</span></a
+        >
+        <a href="/question">
+            <div class="addQuestionButton">
+            <img src="/img/icons8_plus_math_16.png" alt="tetet" />
+            <p>Faça uma pergunta</p>
+            </div>
+        </a>
+      </nav>
+    </header>
         {%block content %}
         {%endblock%}
         <script src="/js/jquery-3.3.1.slim.min.js"></script>

@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfdfd;
+  font-family: sans-serif;
+  letter-spacing: 0.7px;
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 2px 1px rgba(1, 1, 1, 0.1);
+  padding: 15px 150px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav .logo {
+  font-size: 40px;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav .logo span {
+  color: #7159c1;
+  font-size: 25px;
+  margin-right: -0px;
+}
+
+header nav .addQuestionButton {
+  display: flex;
+  align-items: center;
+  background-color: #7159c1;
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header nav .addQuestionButton:hover {
+  filter: brightness(90%);
+}
+
+header nav .addQuestionButton img {
+  margin-right: 10px;
+}
+
+#wrapper {
+  padding: 30px 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#wrapper .card {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+
+  text-align: justify;
+}
+
+#wrapper .card-header {
+  margin-bottom: 20px;
+}
+
+#wrapper .card-body {
+  margin-bottom: 25px;
+  color: #48515e;
+}
+
+#wrapper .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#wrapper .card-footer .total-comment {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 16px 20px;
+  border-radius: 10px;
+  color: #9aa1a9;
+}
+
+#wrapper .card-footer .total-comment img {
+  margin-right: 10px;
+}
+
+#wrapper .card-footer .answer-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #f9f9f9;
+  padding: 16px 30px;
+  border-radius: 10px;
+  color: #9aa1a9;
+}
+
+#wrapper .card-footer .answer-button img {
+  margin-right: 10px;
+}
+
+#wrapper .card-footer .answer-button:hover {
+  filter: brightness(90%);
+}
+
+/*#################### Form Question  ##########################*/
+
+.content .card {
+  width: 70%;
+  margin: 3vh auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.content .card .card-header {
+  border-bottom: 1px solid #d7d7d7;
+  padding: 30px;
+  background-color: #f7f7f7;
+}
+
+.content .card .card-body form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .card .card-body label {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.content .card .card-body input {
+  border: 1px solid #e4e0ed;
+  padding: 0 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.content .card .card-body textarea {
+  border: 1px solid #e4e0ed;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px 15px;
+  resize: none;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid #7159c1;
+  box-shadow: 0 0 0 1px #7159c1;
+}
+
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #7159c1;
+  box-shadow: 0 0 0 1px #7159c1;
+}
+
+.content .card .card-footer {
+  padding: 30px;
+}
+.content .card .card-footer button {
+  padding: 20px 50px;
+  background-color: #7159c1;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.content .card .card-footer button:hover {
+  filter: brightness(90%);
+}
+
+/*#################### Form Answer  ##########################*/
+
+.answer-content {
+  width: 70%;
+  margin: 5vh auto;
+}
+
+.answer-content .question {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.answer-content .question h1 {
+  margin-bottom: 20px;
+}
+
+.answer-content .question p {
+  text-align: justify;
+  line-height: 20px;
+}
+
+.answer-content form {
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.answer-content form label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.answer-content textarea {
+  border: 1px solid #e4e0ed;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px 15px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.answer-content button {
+  background-color: #7159c1;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.answer-content button:hover {
+  filter: brightness(90%);
+}
+
+.answer-content h1 {
+  margin-bottom: 20px;
+}
+
+.answer-content .answer {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+}
