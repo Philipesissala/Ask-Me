@@ -1,3 +1,10 @@
+:root {
+  --violet: #7159c1;
+  --white: #ffffff;
+  --light: #e4e0ed;
+  --background: #f9f9f9;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +20,7 @@ body {
 
 header {
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: 1px 1px 2px 1px rgba(1, 1, 1, 0.1);
   padding: 15px 150px;
 }
@@ -32,7 +39,7 @@ header nav .logo {
 }
 
 header nav .logo span {
-  color: #7159c1;
+  color: var(--violet);
   font-size: 25px;
   margin-right: -0px;
 }
@@ -40,10 +47,10 @@ header nav .logo span {
 header nav .addQuestionButton {
   display: flex;
   align-items: center;
-  background-color: #7159c1;
+  background-color: var(--violet);
   border-radius: 5px;
   padding: 15px;
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -63,7 +70,7 @@ header nav .addQuestionButton img {
 
 #wrapper .card {
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   padding: 40px;
 
@@ -88,7 +95,7 @@ header nav .addQuestionButton img {
 #wrapper .card-footer .total-comment {
   display: flex;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: var(--white);
   padding: 16px 20px;
   border-radius: 10px;
   color: #9aa1a9;
@@ -102,7 +109,7 @@ header nav .addQuestionButton img {
   display: flex;
   align-items: center;
   text-decoration: none;
-  background-color: #f9f9f9;
+  background-color: var(--white);
   padding: 16px 30px;
   border-radius: 10px;
   color: #9aa1a9;
@@ -121,7 +128,7 @@ header nav .addQuestionButton img {
 .content .card {
   width: 70%;
   margin: 3vh auto;
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -144,7 +151,7 @@ header nav .addQuestionButton img {
 }
 
 .content .card .card-body input {
-  border: 1px solid #e4e0ed;
+  border: 1px solid var(--light);
   padding: 0 15px;
   font-size: 20px;
   border-radius: 5px;
@@ -152,7 +159,7 @@ header nav .addQuestionButton img {
 }
 
 .content .card .card-body textarea {
-  border: 1px solid #e4e0ed;
+  border: 1px solid var(--light);
   border-radius: 5px;
   font-size: 20px;
   padding: 15px 15px;
@@ -161,14 +168,14 @@ header nav .addQuestionButton img {
 
 input:focus {
   outline: none !important;
-  border: 1px solid #7159c1;
-  box-shadow: 0 0 0 1px #7159c1;
+  border: 1px solid var(--violet);
+  box-shadow: 0 0 0 1px var(--violet);
 }
 
 textarea:focus {
   outline: none !important;
-  border: 1px solid #7159c1;
-  box-shadow: 0 0 0 1px #7159c1;
+  border: 1px solid var(--violet);
+  box-shadow: 0 0 0 1px var(--violet);
 }
 
 .content .card .card-footer {
@@ -176,8 +183,8 @@ textarea:focus {
 }
 .content .card .card-footer button {
   padding: 20px 50px;
-  background-color: #7159c1;
-  color: #ffffff;
+  background-color: var(--violet);
+  color: var(--white);
   font-size: 15px;
   font-weight: bold;
   border-radius: 5px;
@@ -195,7 +202,7 @@ textarea:focus {
 }
 
 .answer-content .question {
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 25px;
@@ -215,7 +222,7 @@ textarea:focus {
   display: flex;
   padding: 25px;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-bottom: 20px;
@@ -228,7 +235,7 @@ textarea:focus {
 }
 
 .answer-content textarea {
-  border: 1px solid #e4e0ed;
+  border: 1px solid var(--light);
   border-radius: 5px;
   font-size: 20px;
   padding: 15px 15px;
@@ -237,8 +244,8 @@ textarea:focus {
 }
 
 .answer-content button {
-  background-color: #7159c1;
-  color: #ffffff;
+  background-color: var(--violet);
+  color: var(--white);
   padding: 15px;
   border-radius: 5px;
   font-size: 15px;
@@ -254,7 +261,7 @@ textarea:focus {
 }
 
 .answer-content .answer {
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 20px;
