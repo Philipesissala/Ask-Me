@@ -1,18 +1,25 @@
-const Sequelize = require('sequelize');
-const connection = require('../database/database');
+const Sequelize = require("sequelize");
+const Answer = require("../models/answer");
+const connection = require("../database/database");
 
-const perguntas = connection.define('perguntas', {
-    titulo: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    descricao: {
-        type: Sequelize.TEXT,
-        allowNull: false
-    }
+const Question = connection.define("questions", {
+  title: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+  description: {
+    type: Sequelize.TEXT,
+    allowNull: false,
+  },
+  slug: {
+    type: Sequelize.TEXT,
+    allowNull: false,
+  },
 });
 
-//perguntas.sync({ force: true });
+Answer.belongsTo(Question)
+Question.hasMany(Answer);
 
+//Question.sync({ force: true });
 
-module.exports = perguntas;
+module.exports = Question;
