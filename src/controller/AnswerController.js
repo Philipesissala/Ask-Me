@@ -3,15 +3,15 @@ const Question = require("../models/Question");
 
 module.exports = {
   async index(req, res) {
-    const id = req.params.id;
+    const slug = req.params.slug;
     Question.findOne({
-      where: { id },
+      where: { slug },
       raw: true,
     })
       .then((question) => {
         if (question != undefined) {
           Answer.findAll({
-            where: { perguntaId: question.id },
+            where: { questionId: question.id },
             order: [["id", "DESC"]],
           }).then((answers) => {
             res.render("answer", { question, answers });
@@ -26,14 +26,14 @@ module.exports = {
   },
 
   async create(req, res) {
-    const { corpo, perguntaId } = req.body;
+    const { body, questionId } = req.body;
 
     Answer.create({
-      corpo,
-      perguntaId,
+      body,
+      questionId,
     })
       .then(() => {
-        res.redirect(`/question/${perguntaId}`);
+        res.redirect(`/question/${questionId}`);
       })
       .catch((error) => {
         res.send("Error" + error);
