@@ -3,6 +3,7 @@
   --white: #ffffff;
   --light: #e4e0ed;
   --background: #f9f9f9;
+  --gray: #9aa1a9;
 }
 
 * {
@@ -98,7 +99,7 @@ header nav .addQuestionButton img {
   background-color: var(--white);
   padding: 16px 20px;
   border-radius: 10px;
-  color: #9aa1a9;
+  color: var(--gray);
 }
 
 #wrapper .card-footer .total-comment img {
@@ -112,7 +113,7 @@ header nav .addQuestionButton img {
   background-color: var(--white);
   padding: 16px 30px;
   border-radius: 10px;
-  color: #9aa1a9;
+  color: var(--gray);
 }
 
 #wrapper .card-footer .answer-button img {
@@ -265,4 +266,16 @@ textarea:focus {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 20px;
+}
+
+.btnPaginate {
+  
+  background-color: var(--violet);
+  margin: 0 35%;
+  text-decoration: none;
+  color: var(--white);
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
 }

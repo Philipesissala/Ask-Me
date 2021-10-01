@@ -2,22 +2,23 @@
 {% block content %}
      <div class="answer-content">
       <div class="question">
-        <h1>{{question.titulo}}</h1>
+        <h1>{{question.title}}</h1>
         <p>
-          {{question.descricao}}
+          {{question.description}}
         </p>
       </div>
       <form action="/answer" method="POST">
         <label for="corpo">Responder</label>
-        <textarea id="corpo" name="corpo" cols="30" rows="7"></textarea>
-        <input type="hidden" name="perguntaId" value="{{question.id}}">
+        <textarea id="body" name="body" cols="30" rows="7" ></textarea>
+        <input type="hidden" name="questionId" value="{{question.id}}">
         <button>Responder</button>
       </form>
       <h1>Respotas</h1>
       {%for answer in answers%}
       <div class="answer">
-        <p>{{answer.corpo}}</p>
+        <p>{{answer.body}}</p>
       </div>
+      <br>
       {%endfor%}
     </div>
     {% endblock %}

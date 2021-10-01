@@ -1,7 +1,7 @@
 {% extends 'layout.njk' %}
 {% block content %}
     <div id="wrapper">
-      {%for question in questions%}
+      {%for question in results.questions.rows%}
       <div class="card">
         <div class="card-header">
           <h1>{{question.title}}</h1>
@@ -17,7 +17,7 @@
             <img src="./img/icons8_comments_16.png" alt="" />
             <p>50+</p>
           </div>
-          <a href="/question/{{question.slug}}" class="answer-button">
+          <a href="/question/{{question.id}}" class="answer-button">
               <img src="./img/icons8_topic_filled_16.png" alt="" />
               Responder
           </a>
@@ -26,7 +26,10 @@
       <br />
     {%endfor%}
     <br>
-      <a href="/page/1" class="btnPaginate">Ver mais perguntas</a>
+    {%if results.next%}
+    <a href="/page/{{results.page + 1}}" class="btnPaginate">Ver mais perguntas</a>
+    {%else%}
+    {%endif%}
     </div>
 
 {% endblock %}

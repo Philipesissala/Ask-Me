@@ -16,7 +16,8 @@
         "mysql2": "^2.2.5",
         "nodemon": "^2.0.12",
         "nunjucks": "^3.2.3",
-        "sequelize": "^6.6.5"
+        "sequelize": "^6.6.5",
+        "slugify": "^1.6.0"
     },
     "devDependencies": {
         "sucrase": "^3.20.1"
