@@ -2,7 +2,7 @@
   --violet: #7159c1;
   --white: #ffffff;
   --light: #e4e0ed;
-  --background: #f9f9f9;
+  --background: #f0f2f5;
   --gray: #9aa1a9;
 }
 
@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: #fdfdfd;
+  background-color: var(--background);
   font-family: sans-serif;
   letter-spacing: 0.7px;
 }

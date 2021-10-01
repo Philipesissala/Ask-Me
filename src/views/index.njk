@@ -15,7 +15,7 @@
         <div class="card-footer">
           <div class="total-comment">
             <img src="./img/icons8_comments_16.png" alt="" />
-            <p>50+</p>
+            <p>{{answers.count}}</p>
           </div>
           <a href="/question/{{question.slug}}" class="answer-button">
               <img src="./img/icons8_topic_filled_16.png" alt="" />
@@ -26,7 +26,7 @@
       <br />
     {%endfor%}
     <br>
-      <a href="/page/1" class="btnPaginate">Ver mais perguntas</a>
+      <a href="/page/2" class="btnPaginate">Ver mais perguntas</a>
     </div>
 
 {% endblock %}
